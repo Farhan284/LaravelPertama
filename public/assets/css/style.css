@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  display: inline-flex;
+  text-decoration: none;
+  height: 60px;
+  width: 60px;
+}
+
+.navbar .logo:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.6))
+          drop-shadow(0 0 30px rgba(255, 255, 255, 0.4));
+  transition: filter 0.5s ease;
+}
+
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size:xx-large
+}
+
+.navbar a {
+  color: #e7e7e7;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  font-size:70%;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.5s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: #ffffff; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4);
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+
+.konten-halaman {
+  min-height: 100vh;
+  background-image: url(/assets/img/sepeda.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.konten-halaman .content {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  color: #ffffff;
+}
+
+.konten-halaman .content h2 {
+  font-size: 4rem;
+  line-height: 65px;
+}
+
+.konten-halaman .content p {
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.konten-halaman .content button {
+  background: #ffffff;
+  color: #000000;
+  padding: 16px 40px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 30px;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.konten-halaman .content button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8),
+              0 0 20px rgba(0, 0, 0, 0.6),
+              0 0 30px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}

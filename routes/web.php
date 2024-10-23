@@ -7,11 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('loginindex'); //meruju ke file welcome, blade, php di folder resource
+    return view('loginindex'); 
 });
 
 Route::get('/homepage', function () {
-    return view('index'); //meruju ke file welcome, blade, php di folder resource
+    return view('index'); 
 });
 
-
+Route::get('/about', function () {
+    return view('about'); 
+});

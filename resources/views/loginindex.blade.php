@@ -67,7 +67,7 @@
 
             if(username === correctUsername && password === correctPassword){
                 alert('Login Berhasil');
-                window.location.href = 'homepage';
+                window.location.href = '/';
             }else{
                 alert('Login gagal');
             }

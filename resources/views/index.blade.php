@@ -33,7 +33,7 @@
                     <a href="#" class="text-[#e7e7e7] no-underline relative py-[5px] text-[70%] hover:text-white hover:shadow-[0_0_10px_rgba(255,255,255,0.8),0_0_20px_rgba(255,255,255,0.6),0_0_30px_rgba(255,255,255,0.4)] transition-all duration-500 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-white after:transition-[width] after:duration-500 hover:after:w-full">Products</a>
                 </li>
                 <li>
-                    <a href="about" class="text-[#e7e7e7] no-underline relative py-[5px] text-[70%] hover:text-white hover:shadow-[0_0_10px_rgba(255,255,255,0.8),0_0_20px_rgba(255,255,255,0.6),0_0_30px_rgba(255,255,255,0.4)] transition-all duration-500 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-white after:transition-[width] after:duration-500 hover:after:w-full">About us</a>
+                    <a href="{{ route ('about') }}" class="text-[#e7e7e7] no-underline relative py-[5px] text-[70%] hover:text-white hover:shadow-[0_0_10px_rgba(255,255,255,0.8),0_0_20px_rgba(255,255,255,0.6),0_0_30px_rgba(255,255,255,0.4)] transition-all duration-500 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-white after:transition-[width] after:duration-500 hover:after:w-full">About us</a>
                 </li>
             </ul>
         </nav>

@@ -13,6 +13,7 @@ class Pesanan extends Model
         'tanggal_pesanan', 
         'status_pesanan', 
         'produk_id',
+        
     ];
 
     public function produk()
@@ -20,3 +21,5 @@ class Pesanan extends Model
         return $this->belongsTo(Produk::class);
     }
 }
+
+

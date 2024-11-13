@@ -41,7 +41,7 @@ class PesananResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('tanggal_pesanan')->label('Tanggal Pesanan')->date(),
                 Tables\Columns\TextColumn::make('status_pesanan')->label('Status Pesanan'),
-                Tables\Columns\TextColumn::make('produk.nama_produk')->label('Produk'),
+                Tables\Columns\TextColumn::make('produk.nama_produk')->label('Produk')->searchable(), 
             ])
             ->filters([
                 //
